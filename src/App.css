@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+/* App.css */
+
+
+
+.app-container {
+  background-color:#e1f0ee93;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

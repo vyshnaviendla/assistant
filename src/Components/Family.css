@@ -1,0 +1,60 @@
+.General-title {
+    color: #222; /* Darker shade of grey */
+    margin-top: 20px;
+  }
+  
+  /* Styles for the accordion container and items */
+  
+  /* ... (existing styles) ... */
+  
+  /* Style for the accordion button */
+  .accordion-button {
+    background-color: #333; /* Dark grey */
+    color: #000000; /* White */
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .accordion-button:hover {
+    background-color: #959393; /* Slightly darker grey */
+  }
+  
+  /* Style for the collapsed accordion button */
+  .accordion-button.collapsed {
+    background-color: #f9af40; /* Black */
+    border:groove;
+  }
+  
+  /* Style for the accordion body */
+  
+  /* ... (existing styles) ... */
+  
+  /* Additional style for the search box */
+  .searchBox {
+    margin-bottom: 5px;
+  }
+  
+  .srchbtn {
+    background-color: rgb(71, 83, 255); /* Darker shade of grey */
+    color: #fff; /* White */
+    border: none;
+    border-radius: 20px;
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .srchbtn:hover {
+    background-color: #333; /* Dark grey */
+  }
+  
+  .accordian-div{
+    width: 68%;
+    margin-left: auto;
+    margin-right: auto;
+  }

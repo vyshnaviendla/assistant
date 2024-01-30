@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+
+  .chatbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mainbox{
+    margin-top: 30px;
+    height: 500px;
+    width: 400px;
+    border: solid;
+  }
+  /* Your existing styles for the video background */
+
+.video-background {
+  position: relative;
+  width: 50%;
+  height: 100vh; /* Adjust as needed */
+  overflow: hidden;
+}
+
+.chatbot-container {
+  position: absolute;
+  top: 65%; /* Adjust to position vertically */
+  left: 50%; /* Adjust to position horizontally */
+  transform: translate(-50%, -50%);
+  z-index: 1; /* Ensure it's above the video background */
+}
+
+.character-image {
+  /* Style your character image */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0; /* Behind the chatbot */
+}
+
+.chatbox {
+  /* Style your chatbox */
+  /* Ensure it appears above the character image */
+  position: relative;
+  z-index: 0;
+}
