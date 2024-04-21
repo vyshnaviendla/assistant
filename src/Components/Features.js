@@ -1,7 +1,7 @@
 // Navbar.jsx
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Link } from 'react-router-dom';
+import 'bootstrap/dist/js/bootstrap.bundle.js';
 
 const Features = () => {
   return (
@@ -24,7 +24,7 @@ const Features = () => {
             </div>
           </div>
           <div className="carousel-item">
-            <img style={{ height:'400px' , objectFit:'cover'}} className="d-block w-100" src="ci2.jpg" alt="Second slide" />
+            <img style={{ height:'400px' , objectFit:'cover'}} className="d-block w-100" src="c1.jpg" alt="Second slide" />
             <div className="carousel-caption d-none d-md-block text-left align-items-center d-flex h-100">
               <h2 style={{marginTop:'100px'}}>KNOW YOUR RIGHTS</h2>
               <p style={{color:'white'}}>As a citizen of India know what are your lega rights! &rarr;</p>
@@ -32,7 +32,7 @@ const Features = () => {
             </div>
           </div>
           <div className="carousel-item">
-            <img style={{ height:'400px' , objectFit:'cover'}} className="d-block w-100" src="ci2.jpg" alt="Third slide" />
+            <img style={{ height:'400px' , objectFit:'cover'}} className="d-block w-100" src="c1.jpg" alt="Third slide" />
             <div className="carousel-caption d-none d-md-block text-left align-items-center d-flex h-100">
               <h2 style={{marginTop:'100px'}}>LEGAL-WRITINGS</h2>
               <p style={{marginRight:'700px',color:'white'}}>Explore insightful legal writings covering diverse topics, providing clarity and understanding on complex legal matters for informed decisions &rarr;</p>
@@ -40,7 +40,7 @@ const Features = () => {
             </div>
           </div>
           <div className="carousel-item">
-            <img style={{ height:'400px' , objectFit:'cover'}} className="d-block w-100" src="ci2.jpg" alt="Third slide" />
+            <img style={{ height:'400px' , objectFit:'cover'}} className="d-block w-100" src="c1.jpg" alt="Third slide" />
             <div className="carousel-caption d-none d-md-block text-left align-items-center d-flex h-100">
               <h2 style={{marginTop:'100px'}}>Drafting Legal Documents</h2>
               <p style={{marginRight:'700px',color:'white'}}>How to Draft Legal Documents? Step By Step Guide &rarr;</p>

@@ -70,9 +70,9 @@ function Navbar() {
                         <li className="nav-item">
                             <Link className="nav-link active" aria-current="page" to="/ChatBot">SAHAAYAK</Link>
                         </li>
-                        <li className="nav-item">
+                        {/* <li className="nav-item">
                             <Link className="nav-link active" aria-current="page" to="/Features">FEATURES</Link>
-                        </li>
+                        </li> */}
                         <li className="nav-item">
                             <Link className="nav-link active" aria-current="page" to="/Aboutus">ABOUTUS</Link>
                         </li>
@@ -83,7 +83,7 @@ function Navbar() {
                             <Link className="nav-link active" aria-current="page" to="/Login">LOGIN</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link active" aria-current="page" to="/SignUp">SIGN UP</Link>
+                            <Link className="nav-link active" aria-current="page" to="/Signup">SIGN UP</Link>
                         </li>
                     </ul>
                 </div>

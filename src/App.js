@@ -17,6 +17,8 @@ import Kyw from './Components/Kyw';
 import Family from './Components/General';
 import ChatBOT from './Components/ChatBot';
 import Features from './Components/Features';
+import Login from './Components/Login';
+import Signup from './Components/Signup';
 function Home() {
   return (
     <div className='content'>
@@ -33,6 +35,7 @@ function App() {
       <Router>
         <Navbar/>
         <Routes>
+          
           <Route path="/" element={<Home/>}/>
           <Route path="/Contactus" element={<ContactForm/>}/>
           <Route path="/Aboutus" element={<AboutUs/>}/>
@@ -44,6 +47,8 @@ function App() {
           <Route path="/Kyw" element={<Kyw/>}/>
           <Route path="/ChatBot" element={<ChatBOT/>}/>
           <Route path="/Features" element={<Features/>}/>
+          <Route path="/Login" element={<Login/>}/>
+          <Route path="/Signup" element={<Signup/>}/>
         </Routes>
         <Footer/>
       </Router>

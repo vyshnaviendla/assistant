@@ -3,7 +3,7 @@ import './ChatBot.css'
 import '@chatscope/chat-ui-kit-styles/dist/default/styles.min.css';
 import { MainContainer, ChatContainer, MessageList, Message, MessageInput, TypingIndicator } from '@chatscope/chat-ui-kit-react';
 
-const API_KEY = "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";
+const API_KEY = "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";
 
 const systemMessage = {
   "role": "system",
@@ -66,7 +66,7 @@ function ChatBot() {
     }).then((data) => data.json())
       .then((data) => {
         console.log(data);
-        console.log(data.choices[0].message.content);
+        //console.log(data.choices[0].message.content);
 
         // Only update the content property of the last user message
         const updatedMessages = [...chatMessages];
@@ -82,52 +82,52 @@ function ChatBot() {
 
   return (
     <div>
-    <div className='congtainer-fluid'>
+      <div className='congtainer-fluid'>
 
-    <div className='row'> 
-      <div className='col-sm-6'>
-        <div className="video-background">
-          <video autoPlay muted loop id="video-bg">
-            <source src="Video/lawbot.mp4" type="video/mp4" />
-            
-          </video>
-        </div>
-        </div>
+        <div className='row'>
+          <div className='col-sm-6'>
+            <div className="video-background">
+              <video autoPlay muted loop id="video-bg">
+                <source src="Video/lawbot.mp4" type="video/mp4" />
 
-      <div className='col-sm-6'>
-        <div className="chatbot-container ">
-          {/* Video background */}
-          
-          <div className="chatbox">
-            <div className="App">
-              <div className="mainbox">
-                <MainContainer>
-                  <ChatContainer>
-                    <MessageList
-                      scrollBehavior="smooth"
-                      typingIndicator={isTyping ? <TypingIndicator content="ChatBot is typing" /> : null}
-                    >
-                      {messages.map((message, i) => {
-                        console.log(message)
-                        return <Message key={i} model={message} />
-                      })}
-                    </MessageList>
-                    <MessageInput placeholder="Type message here" onSend={handleSend} />
-                  </ChatContainer>
-                </MainContainer>
-              </div>
+              </video>
             </div>
           </div>
 
+          <div className='col-sm-6'>
+            <div className="chatbot-container ">
+              {/* Video background */}
 
+              <div className="chatbox">
+                <div className="App">
+                  <div className="mainbox">
+                    <MainContainer>
+                      <ChatContainer>
+                        <MessageList
+                          scrollBehavior="smooth"
+                          typingIndicator={isTyping ? <TypingIndicator content="ChatBot is typing" /> : null}
+                        >
+                          {messages.map((message, i) => {
+                            console.log(message)
+                            return <Message key={i} model={message} />
+                          })}
+                        </MessageList>
+                        <MessageInput placeholder="Type message here" onSend={handleSend} />
+                      </ChatContainer>
+                    </MainContainer>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
         </div>
-        </div>
-    </div>
-    </div>
-     
       </div>
 
-      )
+    </div>
+
+  )
 }
 
-      export default ChatBot;
+export default ChatBot;
